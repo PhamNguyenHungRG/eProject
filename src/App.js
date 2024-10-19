@@ -16,8 +16,11 @@ import ListVideo from './component/Resources/EducationalVideos/ListVideo';
 import ProductSuggestion from './component/Resources/ProductSuggestions/ProductSuggestion'
 import ListSeeds from './component/Essentials/Seeds/ListSeeds';
 import SeedDetail from './component/Essentials/Seeds/SeedDetail';
-import BackToTop from './component/BackToTopButton';
 import BackToTopButton from './component/BackToTopButton';
+import AvsG from './component/GardeningInfo/AvsG/AvsG';
+import AvsG_Detail from './component/GardeningInfo/AvsG/AvsG_Detail';
+import ToolsDetail from './component/GardeningInfo/ToolsDetail';
+import BorrowBook from './component/Resources/RelatedBooks/BorrowBook';
 
 function App() {
   return (
@@ -27,6 +30,8 @@ function App() {
         <Route path='/Login' index element={<Login/>}/>
         <Route path='/' index element={ <Home/> }/>
         <Route path='/BlogDetails/:id' element={<BlogDetails/>}/>
+        <Route path='/AvsG' index element={<AvsG/>}/>
+        <Route path='/AvsG_Detail/:id' index element={<AvsG_Detail/>}/>
         <Route path='/SoilAndFertilizers' index element={<ListSF/>}/>
         <Route path='/DetailsSL/:type/:id' element={<DetailsSL/>}/>
         <Route path="/Pesticides" element={<Pesticides />} />
@@ -35,9 +40,11 @@ function App() {
         <Route path='/Seeds/:id' index element={<SeedDetail/>}/>
         <Route path='/AboutAndContact' index element={<AboutAndContact/>}/>
         <Route path='/ToolsList' index element={<ToolsList/>}/>
+        <Route path='ToolsDetail/:id' index element={<ToolsDetail/>}/>
         <Route path='/ProductSuggestion' index element={<ProductSuggestion/>}/>
         <Route path='/ListVideo' index element={<ListVideo/>}/>
         <Route path='/BookList' index element={<BookList/>}/>
+        <Route path="/Borrow/:bookTitle" element={<BorrowBook />} />
       </Routes>
       <BackToTopButton/>
       <Footer/>

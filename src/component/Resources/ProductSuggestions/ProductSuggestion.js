@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Tools from '../../../json/GardeningInfo/ToolsList/Tools.json'; // Thay đổi đường dẫn nếu cần
-
+import { Link } from 'react-router-dom';
 const ProductsPerPage = 9; // Số sản phẩm hiển thị trên mỗi trang
 
 function ProductSuggestion() {
@@ -33,6 +33,50 @@ function ProductSuggestion() {
     const handleCategoryChange = (category) => {
         setSelectedCategory(category);
         setCurrentPage(1); // Đặt lại trang về 1 khi thay đổi category
+    };
+
+    // Hàm để hiển thị các ngôi sao dựa trên rating với số lẻ
+    const renderStars = (rating) => {
+        const fullStars = Math.floor(rating); // Số ngôi sao đầy
+        const hasHalfStar = rating - fullStars >= 0.5; // Có ngôi sao nửa hay không
+        const totalStars = 5;
+
+        const stars = [];
+
+        // Thêm ngôi sao đầy
+        for (let i = 0; i < fullStars; i++) {
+            stars.push(
+                <i 
+                    key={i} 
+                    className="bi bi-star-fill" 
+                    style={{ color: '#ffc107', fontSize: '0.8rem', marginRight: '0.1rem' }} // Kích thước nhỏ hơn
+                ></i>
+            );
+        }
+
+        // Thêm ngôi sao nửa nếu cần
+        if (hasHalfStar) {
+            stars.push(
+                <i 
+                    key="half" 
+                    className="bi bi-star-half" 
+                    style={{ color: '#ffc107', fontSize: '0.8rem', marginRight: '0.1rem' }} // Kích thước nhỏ hơn
+                ></i>
+            );
+        }
+
+        // Thêm ngôi sao trống
+        for (let i = fullStars + (hasHalfStar ? 1 : 0); i < totalStars; i++) {
+            stars.push(
+                <i 
+                    key={i + fullStars} 
+                    className="bi bi-star" 
+                    style={{ color: '#ffc107', fontSize: '0.8rem', marginRight: '0.1rem' }} // Kích thước nhỏ hơn
+                ></i>
+            );
+        }
+
+        return stars;
     };
 
     return (
@@ -77,10 +121,11 @@ function ProductSuggestion() {
                                     <div className="card-body d-flex flex-column" style={{ backgroundColor: '#f8f9fa' }}>
                                         <h5 className="card-title text-primary">{tool.name}</h5>
                                         <p className="card-text text-muted">{tool.category}</p>
-                                        <p className="card-text">
-                                            <span className="badge bg-success">{tool.rating} ⭐</span>
+                                        <p className="card-text d-flex align-items-center">
+                                            {renderStars(tool.rating)} {/* Hiển thị các ngôi sao */}
+                                            <span style={{ fontSize: '0.8rem', marginLeft: '0.5rem', color: '#2E8B57' }}>{tool.rating}</span> {/* Hiển thị số rating */}
                                         </p>
-                                        <a href="#" className="btn btn-success mt-auto">View Details</a>
+                                        <Link to={`/ToolsDetail/${tool.ID}`} className="btn btn-success mt-auto">View Details</Link>
                                     </div>
                                 </div>
                             </div>

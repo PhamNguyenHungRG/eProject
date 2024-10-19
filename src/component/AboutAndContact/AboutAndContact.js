@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function About() {
   const appStyle = {
@@ -13,6 +13,7 @@ function About() {
     textAlign: 'center',
     position: 'relative',
     borderRadius: '0 0 20px 20px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
   };
 
   const overlayStyle = {
@@ -32,7 +33,7 @@ function About() {
 
       <div className="container mt-5">
         <div className="row align-items-stretch">
-          <div className="col-md-6">
+          <div className="col-md-6 mb-4">
             <h3 className="text-center mb-4">Trademark GREEN GROVES</h3>
             <ul className="list-unstyled">
               <li>🌱 Behind Green Groves is a small team within FBT.</li>
@@ -42,10 +43,10 @@ function About() {
             </ul>
           </div>
           <div className="col-md-6 d-flex align-items-center justify-content-center">
-            <img 
-              src="https://dungcunongnghiep.vn/files/sanpham/670/3/jpg/bo-dung-cu-lam-vuon-mini-3-mon-hm043.jpg" 
-              alt="Green Groves" 
-              className="img-fluid rounded shadow" 
+            <img
+              src="https://dungcunongnghiep.vn/files/sanpham/670/3/jpg/bo-dung-cu-lam-vuon-mini-3-mon-hm043.jpg"
+              alt="Green Groves"
+              className="img-fluid rounded shadow"
               style={{ maxWidth: '80%' }}
             />
           </div>
@@ -86,8 +87,8 @@ function About() {
               </div>
               <div className="mb-3">
                 <label className="form-label">Gender<span className="text-danger">*</span></label>
-                <div className="d-flex">
-                  <div className="form-check me-3">
+                <div className="d-flex justify-content-around">
+                  <div className="form-check">
                     <input type="radio" name="gender" id="gMale" className="form-check-input" value="male" />
                     <label htmlFor="gMale" className="form-check-label">Male</label>
                   </div>
@@ -122,16 +123,26 @@ function About() {
             </form>
           </div>
           <div className="col-lg-6 col-md-4">
-            {/* <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3783605716003!2d106.67066987451727!3d10.782305959086328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529354c63e417%3A0x77762c4bf4d10930!2zxJAuIEPDoWNoIE3huqFuZyBUaMOhbmcgOCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1726897762000!5m2!1svi!2s" 
-              width="100%" 
-              height="450" 
-              style={{ border: "0" }} 
-              allowFullScreen="" 
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3253163053178!2d106.66372207480508!3d10.786376989362989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x5a981a5efee9fd7d!2zNTkwIMSQLiBDw6FjaCBN4bqhbmcgVGjDoW5nIDgsIFBoxrDhu51uZyAxMSwgUXXhuq1uIDMsIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1728996163781!5m2!1svi!2s"
+              width="100%"
+              height={450}
+              style={{ border: "0" }}
+              allowFullScreen
               loading="lazy"
-            ></iframe> */}
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3253163053178!2d106.66372207480508!3d10.786376989362989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x5a981a5efee9fd7d!2zNTkwIMSQLiBDw6FjaCBN4bqhbmcgVGjDoW5nIDgsIFBoxrDhu51uZyAxMSwgUXXhuq1uIDMsIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1728996163781!5m2!1svi!2s" width={600} height={450} style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
-
+            />
+            {/* Thêm trường hiển thị tọa độ */}
+            <div className="text-center mt-3">
+              <div className="alert alert-info">
+                <strong>Location</strong>
+                <div className="d-flex justify-content-center align-items-center">
+                  <marquee behavior="scroll" direction="left" scrollamount="5">
+                    <span className="mx-3">Latitude: <strong>10.786377</strong></span>
+                    <span className="mx-3">Longitude: <strong>106.6643835</strong></span>
+                  </marquee>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

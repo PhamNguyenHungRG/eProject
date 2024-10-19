@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import books from '../../../json/Resources/RelatedBooks/Book.json';
 
 const BookList = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const booksPerPage = 6;  // Số sách hiển thị trên mỗi trang
+  const booksPerPage = 6; // Số lượng sách hiển thị mỗi trang
 
-  // Tính toán tổng số trang
+  // Tính tổng số trang
   const totalPages = Math.ceil(books.length / booksPerPage);
 
-  // Lấy sách thuộc trang hiện tại
+  // Lấy sách cho trang hiện tại
   const indexOfLastBook = currentPage * booksPerPage;
   const indexOfFirstBook = indexOfLastBook - booksPerPage;
   const currentBooks = books.slice(indexOfFirstBook, indexOfLastBook);
@@ -18,23 +19,52 @@ const BookList = () => {
 
   return (
     <div className="container my-5">
-      <h1 className="text-center mb-4 text-success">Danh sách Sách Làm Vườn</h1>
+      <h1 className="text-center mb-4" style={{ color: '#28a745', fontWeight: 'bold' }}>
+        Gardening Books List
+      </h1>
       <div className="row">
         {currentBooks.map((book, index) => (
-          <div key={index} className="col-lg-4 col-md-6 mb-4">
-            <div className="card shadow-lg h-100 border-0" style={{ borderRadius: '15px' }}>
+          <div key={index} className="col-lg-4 col-md-6 mb-4 d-flex">
+            <div className="card shadow-lg w-100" style={{ borderRadius: '15px', display: 'flex', flexDirection: 'column' }}>
               <img
                 src={book.image}
                 alt={book.title}
                 className="card-img-top"
-                style={{ borderTopLeftRadius: '15px', borderTopRightRadius: '15px', height: '300px', objectFit: 'cover' }}
+                style={{
+                  borderTopLeftRadius: '15px',
+                  borderTopRightRadius: '15px',
+                  height: '300px',
+                  objectFit: 'cover',
+                }}
               />
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title text-success">{book.title}</h5>
-                <p className="card-text"><strong>Tác giả:</strong> {book.author}</p>
-                <a href={book.link} target="_blank" rel="noopener noreferrer" className="mt-auto btn btn-outline-success rounded-pill">
-                  Xem trên Amazon
+              <div className="card-body d-flex flex-column flex-grow-1">
+                <h5 className="card-title" style={{ color: '#28a745', fontWeight: 'bold' }}>{book.title}</h5>
+                <p className="card-text"><strong>Author:</strong> {book.author}</p>
+                <a
+                  href={book.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-auto btn btn-outline-success rounded-pill"
+                  style={{
+                    borderColor: '#28a745',
+                    color: '#28a745',
+                    transition: '0.3s',
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+                  }}
+                >
+                  Buy on Amazon
                 </a>
+                {/* Nút "Mượn sách" sử dụng Link */}
+                <Link
+                  to={`/Borrow/${book.title}`} // Điều hướng đến BorrowBook
+                  className="btn btn-success mt-2 rounded-pill"
+                  style={{
+                    transition: '0.3s',
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+                  }}
+                >
+                  Borrow Book
+                </Link>
               </div>
             </div>
           </div>
@@ -54,7 +84,8 @@ const BookList = () => {
                   transition: '0.3s',
                   borderRadius: '50%',
                   width: '40px',
-                  height: '40px'
+                  height: '40px',
+                  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
                 }}
                 onClick={() => handlePageChange(page)}
               >

@@ -10,17 +10,11 @@ function TopHeader() {
     const [visitorCount, setVisitorCount] = useState(0);
 
     useEffect(() => {
-        // Lấy giá trị visitor count từ localStorage
         const storedCount = localStorage.getItem('visitorCount');
         const newCount = storedCount ? parseInt(storedCount) + 1 : 1;
-
-        // Cập nhật visitor count trong state
         setVisitorCount(newCount);
-        
-        // Lưu lại visitor count vào localStorage
         localStorage.setItem('visitorCount', newCount);
 
-        // Kiểm tra token và avatar
         const token = localStorage.getItem('token');
         const avatar = localStorage.getItem('avatar');
 
@@ -29,8 +23,7 @@ function TopHeader() {
             setAvatarUrl(avatar || 'https://cdn-icons-png.flaticon.com/512/6858/6858504.png');
 
             try {
-                const userId = JSON.parse(atob(token.split('.')[1])).id; // Lấy ID từ token
-
+                const userId = JSON.parse(atob(token.split('.')[1])).id;
                 const user = UserData.find(user => user.id === userId);
                 if (user) {
                     setUserName(user.name);
@@ -39,56 +32,45 @@ function TopHeader() {
                 console.error('Error decoding token:', error);
             }
         }
-    }, []); // Chỉ chạy khi component mount
+    }, []);
 
     const fnRemove = () => {
         localStorage.clear();
         his('/');
-        window.history.go(0); // Refresh the page after logging out
+        window.history.go(0);
     };
 
     return (
         <header className="py-2" style={{ backgroundColor: "#e8f5e9" }}>
             <div className="container">
-                <div className="row align-items-center justify-content-between">
-                    
-                    {/* Visitor Count */}
-                    <div className="col-md-5 d-none d-md-block">
-                        <div className="d-flex justify-content-start">
-                            <div className="me-4">
-                                <strong>Visitor Count: {visitorCount}</strong>
-                            </div>
+                <div className="d-flex justify-content-between align-items-center flex-wrap">
+                    {/* Contact Info */}
+                    <div className="d-flex me-3 mb-2 mb-md-0">
+                        <div className="d-flex align-items-center me-4">
+                            <i className="bi bi-telephone-fill me-1" style={{ color: "#388e3c", fontSize: "1.2rem" }}></i>
+                            <span style={{ color: "#388e3c", fontWeight: "bold", fontSize: "1rem" }}>0365153119</span>
                         </div>
-                    </div>
-
-                    {/* Contact Info (Visible only on larger screens) */}
-                    <div className="col-md-5 d-none d-md-block">
-                        <div className="d-flex justify-content-start">
-                            <div className="me-4 d-flex align-items-center">
-                                <i className="bi bi-telephone-fill me-1" style={{ color: "#388e3c", fontSize: "1rem" }}></i>
-                                <span style={{ color: "#388e3c", fontWeight: "bold" }}>0365153119</span>
-                            </div>
-                            <div className="d-flex align-items-center">
-                                <i className="bi bi-envelope-fill me-1" style={{ color: "#388e3c", fontSize: "1rem" }}></i>
-                                <span style={{ color: "#388e3c", fontWeight: "bold" }}>greengroves123@gmail.com</span>
-                            </div>
+                        <div className="d-flex align-items-center">
+                            <i className="bi bi-envelope-fill me-1" style={{ color: "#388e3c", fontSize: "1.2rem" }}></i>
+                            <span style={{ color: "#388e3c", fontWeight: "bold", fontSize: "1rem" }}>greengroves123@gmail.com</span>
                         </div>
                     </div>
 
                     {/* Greeting Message */}
-                    <div className="col-md-4 text-center">
-                        {isLoggedIn && userName && <h5 style={{ color: "#4caf50" }}>Hello, {userName}</h5>}
+                    <div className="text-center me-auto mb-2 mb-md-0">
+                        {isLoggedIn && userName && <h5 style={{ color: "#4caf50", margin: 0 }}>Hello, {userName}</h5>}
                     </div>
 
-                    {/* Login/Register and Avatar with Dropdown for Logged-in Users */}
-                    <div className="col-md-3 col-6 text-end">
+                    {/* Visitor Count and Avatar Dropdown */}
+                    <div className="d-flex align-items-center">
+                        <strong className="me-2" style={{ fontSize: "1rem" }}>Visitor Count: {visitorCount}</strong>
                         {isLoggedIn ? (
-                            <div className="dropdown d-flex align-items-center">
+                            <div className="dropdown">
                                 <img
                                     src={avatarUrl}
                                     alt="User Avatar"
                                     className="rounded-circle me-2"
-                                    style={{ width: "35px", height: "35px", objectFit: "cover", cursor: "pointer" }}
+                                    style={{ width: "40px", height: "40px", objectFit: "cover", cursor: "pointer" }}
                                     data-bs-toggle="dropdown"
                                 />
                                 <ul className="dropdown-menu dropdown-menu-end">
@@ -105,7 +87,7 @@ function TopHeader() {
                                 </ul>
                             </div>
                         ) : (
-                            <div className="d-flex justify-content-end">
+                            <div className="d-flex">
                                 <Link
                                     to="/Login"
                                     className="btn btn-outline-success btn-sm me-2"
@@ -113,7 +95,7 @@ function TopHeader() {
                                         borderColor: "#388e3c",
                                         color: "#388e3c",
                                         backgroundColor: "#f1f8e9",
-                                        fontSize: "0.85rem",
+                                        fontSize: "0.9rem",
                                     }}
                                 >
                                     Login
@@ -124,7 +106,7 @@ function TopHeader() {
                                     style={{
                                         backgroundColor: "#388e3c",
                                         color: "#fff",
-                                        fontSize: "0.85rem"
+                                        fontSize: "0.9rem"
                                     }}
                                 >
                                     Register

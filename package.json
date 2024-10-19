@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "vite test",
     "eject": "react-scripts eject",
     "deploy": "npm run build && gh-pages -d build"
   },

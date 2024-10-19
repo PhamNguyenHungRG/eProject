@@ -40,7 +40,7 @@ function BodyHeader() {
                                     Gardening Info
                                 </Link>
                                 <ul className="dropdown-menu">
-                                    <li><Link className="dropdown-item" to="#">Articles & Guides</Link></li>
+                                    <li><Link className="dropdown-item" to="/AvsG">Articles & Guides</Link></li>
                                     <li><Link className="dropdown-item" to="#">Improvement Tips</Link></li>
                                     <li><Link className="dropdown-item" to="/ToolsList">Tool List</Link></li>
                                 </ul>

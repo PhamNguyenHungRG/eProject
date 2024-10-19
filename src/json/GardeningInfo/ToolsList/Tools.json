@@ -19,9 +19,9 @@
         "ID": 2,
         "name": "Garden Fork",
         "category": "Hand Tools",
-        "videoUrl": "https://youtu.be/SB8QHfLiC1Y",
+        "videoUrl": "https://www.youtube.com/watch?v=vme7Lkvqxxo",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-garden-fork-p182-31893_image.jpg",
-        "rating": 4,
+        "rating": 4.75,
         "content": [
             {
                 "description": "A garden fork is used for loosening, lifting, and turning over soil.",
@@ -35,7 +35,7 @@
         "ID": 3,
         "name": "Pruning Shears",
         "category": "Cutting Tools",
-        "videoUrl": "https://youtu.be/eQ-lw7xJwxw",
+        "videoUrl": "https://www.youtube.com/shorts/LwLdYyLIBP4",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-pruning-shears-p182-31894_image.jpg",
         "rating": 5,
         "content": [
@@ -49,11 +49,11 @@
     },
     {
         "ID": 4,
-        "name": "Garden Hoe",
+        "name": "Garden Fork",
         "category": "Hand Tools",
-        "videoUrl": "https://youtu.be/mzZxjYyXh5U",
+        "videoUrl": "https://www.youtube.com/watch?v=arpR7ThrN0Y&pp=ygUSaG93IHRvIGdhcmRlbiBmb3Jr",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-garden-hoe-p182-31895_image.jpg",
-        "rating": 4,
+        "rating": 3,
         "content": [
             {
                 "description": "A garden hoe is used for breaking up soil and removing weeds.",
@@ -69,7 +69,7 @@
         "category": "Watering Tools",
         "videoUrl": "https://youtu.be/JGMiBgMGxNc",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-watering-can-p182-31896_image.jpg",
-        "rating": 5,
+        "rating": 2,
         "content": [
             {
                 "description": "A watering can is essential for watering plants manually.",
@@ -85,7 +85,7 @@
         "category": "Hand Tools",
         "videoUrl": "https://youtu.be/2ROG-gqf87Q",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-garden-rake-p182-31897_image.jpg",
-        "rating": 4,
+        "rating": 2.5,
         "content": [
             {
                 "description": "A garden rake is used for leveling soil and collecting debris.",
@@ -101,7 +101,7 @@
         "category": "Hand Tools",
         "videoUrl": "https://youtu.be/l3prx8pOzz0",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-garden-spade-p182-31898_image.jpg",
-        "rating": 5,
+        "rating": 4.5,
         "content": [
             {
                 "description": "A garden spade is used for digging and edging.",
@@ -117,7 +117,7 @@
         "category": "Protective Gear",
         "videoUrl": "https://youtu.be/c2zLGl1lO4o",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-gardening-gloves-p182-31899_image.jpg",
-        "rating": 5,
+        "rating": 4.9,
         "content": [
             {
                 "description": "Gardening gloves protect your hands from thorns and dirt.",
@@ -133,7 +133,7 @@
         "category": "Protective Gear",
         "videoUrl": "https://youtu.be/30iEbp_y8mk",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-kneeling-pad-p182-31900_image.jpg",
-        "rating": 4,
+        "rating": 4.7,
         "content": [
             {
                 "description": "A kneeling pad provides cushioning for your knees while gardening.",
@@ -149,7 +149,7 @@
         "category": "Transport Tools",
         "videoUrl": "https://youtu.be/VA0m23-3vbI",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-wheelbarrow-p182-31901_image.jpg",
-        "rating": 5,
+        "rating": 3.9,
         "content": [
             {
                 "description": "A garden wheelbarrow is essential for transporting soil, plants, and tools.",
@@ -165,7 +165,7 @@
         "category": "Hand Tools",
         "videoUrl": "https://youtu.be/cElnRlyH9Z0",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-cultivator-p182-31902_image.jpg",
-        "rating": 4,
+        "rating": 4.75,
         "content": [
             {
                 "description": "A cultivator is used for breaking up and aerating soil.",
@@ -181,7 +181,7 @@
         "category": "Hand Tools",
         "videoUrl": "https://youtu.be/5F7RXlgPb_M",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-weeder-p182-31903_image.jpg",
-        "rating": 4,
+        "rating": 4.8,
         "content": [
             {
                 "description": "A weeder is designed to remove weeds from the garden.",
@@ -197,7 +197,7 @@
         "category": "Hand Tools",
         "videoUrl": "https://youtu.be/l2YYiYH6g3k",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-edger-p182-31904_image.jpg",
-        "rating": 4,
+        "rating": 1.9,
         "content": [
             {
                 "description": "An edger is used to create clean edges around garden beds and walkways.",
@@ -213,7 +213,7 @@
         "category": "Watering Tools",
         "videoUrl": "https://youtu.be/fDwb2wM2tq8",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-garden-sprayer-p182-31905_image.jpg",
-        "rating": 5,
+        "rating": 4.7,
         "content": [
             {
                 "description": "A garden sprayer is used for applying fertilizers and pesticides.",
@@ -229,7 +229,7 @@
         "category": "Watering Tools",
         "videoUrl": "https://youtu.be/URZ1czRf9fs",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-hose-reel-p182-31906_image.jpg",
-        "rating": 5,
+        "rating": 3.2,
         "content": [
             {
                 "description": "A hose reel is used to store and manage garden hoses.",
@@ -245,7 +245,7 @@
         "category": "Watering Tools",
         "videoUrl": "https://youtu.be/CW_k20D5jlU",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-garden-hose-p182-31907_image.jpg",
-        "rating": 5,
+        "rating": 3.3,
         "content": [
             {
                 "description": "A garden hose is essential for watering plants and gardens.",
@@ -261,7 +261,7 @@
         "category": "Watering Tools",
         "videoUrl": "https://youtu.be/K6G92hHgGvs",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-drip-irrigation-kit-p182-31908_image.jpg",
-        "rating": 5,
+        "rating": 3.4,
         "content": [
             {
                 "description": "A drip irrigation kit provides efficient watering directly to plant roots.",
@@ -277,7 +277,7 @@
         "category": "Watering Tools",
         "videoUrl": "https://youtu.be/UDKDrJH5TPk",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-rain-gauge-p182-31909_image.jpg",
-        "rating": 4,
+        "rating": 4.2,
         "content": [
             {
                 "description": "A rain gauge measures the amount of rainfall in your garden.",
@@ -293,7 +293,7 @@
         "category": "Watering Tools",
         "videoUrl": "https://youtu.be/NvYvMu8i4Kg",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-soil-moisture-meter-p182-31910_image.jpg",
-        "rating": 4,
+        "rating": 4.9,
         "content": [
             {
                 "description": "A soil moisture meter helps determine when to water your plants.",
@@ -341,7 +341,7 @@
         "category": "Protective Gear",
         "videoUrl": "https://youtu.be/XxD3oqJyy14",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-garden-kneeler-p182-31913_image.jpg",
-        "rating": 4,
+        "rating": 4.8,
         "content": [
             {
                 "description": "A garden kneeler provides support while working at ground level.",
@@ -373,7 +373,7 @@
         "category": "Cutting Tools",
         "videoUrl": "https://youtu.be/HLUeCki1pP0",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-hedge-shears-p182-31915_image.jpg",
-        "rating": 5,
+        "rating": 2.2,
         "content": [
             {
                 "description": "Hedge shears are designed for shaping and trimming hedges.",
@@ -389,7 +389,7 @@
         "category": "Cutting Tools",
         "videoUrl": "https://youtu.be/p2EYUZ1G-0g",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-lopper-p182-31916_image.jpg",
-        "rating": 5,
+        "rating": 3.7,
         "content": [
             {
                 "description": "Loppers are used for cutting thick branches and stems.",
@@ -405,7 +405,7 @@
         "category": "Garden Maintenance",
         "videoUrl": "https://youtu.be/s9TX2F_PeYI",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-leaf-blower-p182-31917_image.jpg",
-        "rating": 5,
+        "rating": 4.6,
         "content": [
             {
                 "description": "A leaf blower is used for clearing leaves and debris from lawns.",
@@ -437,7 +437,7 @@
         "category": "Planting Tools",
         "videoUrl": "https://youtu.be/0gpkjNwtYt0",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-seedling-tray-p182-31919_image.jpg",
-        "rating": 5,
+        "rating": 4.5,
         "content": [
             {
                 "description": "A seedling tray is used for starting seeds indoors.",
@@ -453,7 +453,7 @@
         "category": "Planting Tools",
         "videoUrl": "https://youtu.be/cAXGABgWTPg",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-transplanting-tool-p182-31920_image.jpg",
-        "rating": 5,
+        "rating": 4.9,
         "content": [
             {
                 "description": "A transplanting tool is used for moving seedlings to larger pots or garden beds.",
@@ -469,7 +469,7 @@
         "category": "Transport Tools",
         "videoUrl": "https://youtu.be/T0bxN2rcPlY",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-garden-cart-p182-31921_image.jpg",
-        "rating": 5,
+        "rating": 4.7,
         "content": [
             {
                 "description": "A garden cart is perfect for transporting tools and plants around the garden.",
@@ -485,7 +485,7 @@
         "category": "Garden Maintenance",
         "videoUrl": "https://youtu.be/24ZgJm8kmOk",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-compost-turner-p182-31922_image.jpg",
-        "rating": 4,
+        "rating": 3.9,
         "content": [
             {
                 "description": "A compost turner helps aerate compost piles.",
@@ -549,7 +549,7 @@
         "category": "Planting Tools",
         "videoUrl": "https://youtu.be/KZ0OXc8zD2I",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-plant-labels-p182-31926_image.jpg",
-        "rating": 4,
+        "rating": 4.2,
         "content": [
             {
                 "description": "Plant labels help identify different plants in your garden.",
@@ -565,7 +565,7 @@
         "category": "Garden Maintenance",
         "videoUrl": "https://youtu.be/dG47TPAXih8",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-pest-control-sprayer-p182-31927_image.jpg",
-        "rating": 5,
+        "rating": 3.3,
         "content": [
             {
                 "description": "A pest control sprayer is used for applying pesticides.",
@@ -581,7 +581,7 @@
         "category": "Cutting Tools",
         "videoUrl": "https://youtu.be/dLP-pqD_1yI",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-garden-knife-p182-31928_image.jpg",
-        "rating": 4,
+        "rating": 5,
         "content": [
             {
                 "description": "A garden knife is versatile for various cutting tasks.",
@@ -645,7 +645,7 @@
         "category": "Hand Tools",
         "videoUrl": "https://youtu.be/KfS07FUdDQc",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-weeder-p182-31932_image.jpg",
-        "rating": 5,
+        "rating": 3,
         "content": [
             {
                 "description": "A weeder is designed to remove weeds from the garden.",
@@ -677,7 +677,7 @@
         "category": "Garden Maintenance",
         "videoUrl": "https://youtu.be/0Ol_N_D6Y6E",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-rake-p182-31934_image.jpg",
-        "rating": 5,
+        "rating": 3.3,
         "content": [
             {
                 "description": "A rake is used for leveling soil and collecting debris.",
@@ -693,7 +693,7 @@
         "category": "Garden Maintenance",
         "videoUrl": "https://youtu.be/1ja0fOXIh4g",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-garden-hoe-p182-31935_image.jpg",
-        "rating": 5,
+        "rating": 4.6,
         "content": [
             {
                 "description": "A garden hoe is used for weeding and cultivating soil.",
@@ -709,7 +709,7 @@
         "category": "Cutting Tools",
         "videoUrl": "https://youtu.be/Y0fbY_EZmDA",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-bonsai-shears-p182-31936_image.jpg",
-        "rating": 5,
+        "rating": 4.4,
         "content": [
             {
                 "description": "Bonsai shears are used for shaping and trimming bonsai trees.",
@@ -725,7 +725,7 @@
         "category": "Cutting Tools",
         "videoUrl": "https://youtu.be/wE0tTnWqOKU",
         "imgUrl": "https://www.gardenstreet.co.uk/images/bulldog-premier-garden-scythe-p182-31937_image.jpg",
-        "rating": 4,
+        "rating": 4.4,
         "content": [
             {
                 "description": "A garden scythe is used for cutting grass and tall weeds.",
